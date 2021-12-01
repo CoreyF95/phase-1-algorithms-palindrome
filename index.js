@@ -1,13 +1,26 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let reverseStr = word.split('').reverse().join(''); 
+  if (reverseStr === word) {
+    return true
+  } else {
+    return false
+  }
 }
 
+
 /* 
-  Add your pseudocode here
+  create function
+    reverse the characters of word
+    use if else to return true or false 
+      return true if palindrome
+      return false if palindrome  
 */
 
 /*
-  Add written explanation of your solution here
+  First, I created a function that takes a string as it's only argument(word).
+  Then, I split the string, reversed the letters, joined them back together, and saved them to reverseStr.
+  Next, I made an if else statement. If the reverseStr is strictly equal to word, the function will return true. 
+  If it is not strictly equal, the function will return false.
 */
 
 // You can run `node index.js` to view these console logs
